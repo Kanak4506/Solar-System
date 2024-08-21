@@ -1,1 +1,1 @@
-This was made to improve my animation skills.
+Ya! It includes a lot of animations..
