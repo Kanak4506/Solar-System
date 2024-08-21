@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Fredoka:wght@300..700&family=Gothic+A1:wght@300;400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mukta:wght@200;300;400;500;600;700;800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yatra+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.nav_bar {
+    display: flex;
+    color: white;
+    font-family: "poppins";
+    background-color: black;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+    background-image: url('assets/images/galaxy.gif');
+    letter-spacing: 1px;
+}
+
+.right_nav_items {
+    display: flex;
+    list-style: none;
+    margin-right: 40px;
+}
+
+.right_nav_items li {
+    margin: 25px;
+    cursor: pointer;
+}
+
+.hero_section {
+    position: relative;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    font-family: "Merriweather", serif;
+}
+
+.hero_bg_img {
+    background-image: url('assets/images/asset\ 1.jpeg');
+    height: 60vh;
+    width: 100vw;
+    background-position: center;
+    filter: brightness(50%);
+    z-index: -1;
+    position: absolute;
+}
+
+.hero_section h1 {
+    font-size: 50px;
+    font-family: "Yatra One", cursive;
+    /* margin: 10px 0px;*/
+}
+
+.hero_section div {
+    padding: 150px;
+}
+
+.center_parent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center {
+    width: 50%;
+}
+
+.overview {
+    margin: 180px 0px;
+}
+
+.overview h1 {
+    font-size: 40px;
+    padding: 15px;
+}
+
+.overview p {
+    padding: 15px;
+}
+
+.overview a {
+    color: #17171b;
+    text-decoration: underline dashed #58585b;
+    text-decoration-thickness: 1px;
+}
+
+.d_logo img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin: 10px 50px;
+}
+
+.d_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #b9b9bb;
+    border-radius: 7px;
+}
+
+.d_logo {
+    display: flex;
+    align-items: center;
+}
+
+.img3d {
+    position: relative;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg_3dimg {
+
+    background-image: url('assets/images/asset\ 2.png');
+    height: 500px;
+    width: 800px;
+    background-position: center;
+    filter: brightness(40%);
+    position: absolute;
+    z-index: -1;
+}
+
+.btn_holder {
+    display: flex;
+    height: 500px;
+    width: 800px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    background-color: #fff;
+    padding: 0.8em 1.5em;
+    border-radius: 20em;
+    border: none;
+    user-select: none;
+    cursor: pointer;
+    font-size: 24px;
+    transition: all 100ms linear;
+    color: #000000;
+    font-family: cursive;
+    font-weight: bold;
+    position: relative;
+    box-shadow: inset 0 4px 6px -1px rgb(0 0 0 / 0.1),
+        0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.btn:active {
+    box-shadow: inset 0 0 0 4px #043b3f6b;
+}
+
+.btn::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    border-radius: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease-in-out;
+    opacity: 0;
+    animation: flash 100ms ease-in-out;
+    transform: scaleX(2) scaleY(2);
+}
+
+.btn:hover::before {
+    opacity: 1;
+    transform: scaleX(1) scaleY(1);
+}
+
+@keyframes flash {
+    0% {
+        opacity: 1;
+        transform: translate(45px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(0);
+    }
+}
+
+.number {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.review {
+    display: flex;
+    justify-content: space-around;
+    margin: 100px;
+}
+
+.rev1 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.sub_footer {
+    background-color: black;
+    font-family: "poppins";
+    color: #b4b5b7;
+    display: flex;
+    justify-content: space-around;
+    padding: 100px;
+}
+
+.sub_footer h1 {
+    letter-spacing: 1px;
+    font-family: "DM Serif Display", serif;
+    color: white;
+}
+
+.sub_footer ul {
+    list-style: none;
+    margin: 10px 0px;
+}
+
+.fr1,
+.fr2,
+.fr3,
+.fr4 {
+    padding: 20px;
+}
+
+.sub_footer li {
+    padding: 5px 0px;
+}
+
+.sub_footer li:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.fr1 p {
+    margin: 10px 0px;
+}
+
+.finfo {
+    padding: 7px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.finfo img {
+    margin-right: 15px;
+}
+
+footer {
+    background-color: #151d28;
+    padding: 20px;
+    text-align: right;
+    padding-right: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+footer svg {
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+.main_container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('assets/images/galaxy.gif');
+    overflow: hidden;
+}
+
+.planets {
+    border-radius: 100%;
+    animation: orbit 15s infinite linear;
+
+}
+
+.common {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: orbit 15s infinite linear;
+    border-radius: 100%;
+    border: 2px solid grey;
+}
+
+.img {
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sun {
+    border-radius: 50%;
+}
+
+.sun .img {
+    background-image: url('assets/images/sun.png');
+    height: 70px;
+    width: 70px;
+}
+
+.p1 {
+    height: 150px;
+    width: 150px;
+    position: relative;
+
+}
+
+.c1 {
+    top: 13px;
+    left: 0;
+    position: absolute;
+
+}
+
+.c1 .img {
+    background-image: url('assets/images/mercury.png');
+    height: 34px;
+    width: 34px;
+}
+
+.p2 {
+    height: 250px;
+    width: 250px;
+    position: relative;
+
+}
+
+.c2 {
+    top: 30px;
+    left: 0;
+    position: absolute;
+}
+
+.c2 .img {
+    background-image: url('assets/images/venus.png');
+    height: 40px;
+    width: 40px;
+}
+
+
+
+.p3 {
+    height: 350px;
+    width: 350px;
+    position: relative;
+
+
+}
+
+.c3 {
+    position: absolute;
+    top: 60px;
+    left: 0;
+
+}
+
+.c3 .img {
+    background-image: url('assets/images/earth.png');
+    height: 45px;
+    width: 45px;
+}
+
+
+.p4 {
+    height: 450px;
+    width: 450px;
+    position: relative;
+
+}
+
+.c4 {
+    position: absolute;
+    top: 100px;
+    left: 0;
+
+}
+
+.c4 .img {
+    background-image: url('assets/images/mars.png');
+    height: 47px;
+    width: 47px;
+}
+
+
+.p5 {
+    height: 670px;
+    width: 670px;
+    position: relative;
+}
+
+.c5 {
+    position: absolute;
+    top: 97px;
+    left: 0;
+}
+
+.c5 .img {
+    background-image: url('assets/images/jupiter.png');
+    height: 120px;
+    width: 120px;
+}
+
+
+.p6 {
+    height: 800px;
+    width: 800px;
+    position: relative;
+
+}
+
+.c6 {
+    position: absolute;
+    top: 180px;
+    left: 0;
+}
+
+
+.c6 .img {
+    background-image: url('assets/images/saturn.png');
+    height: 70px;
+    width: 70px;
+}
+
+
+
+.p7 {
+    height: 900px;
+    width: 900px;
+    position: relative;
+}
+
+.c7 {
+    position: absolute;
+    top: 240px;
+    left: 0;
+}
+
+.c7 .img {
+    background-image: url('assets/images/uranus.png');
+    height: 70px;
+    width: 70px;
+}
+
+.p8 {
+    height: 1000px;
+    width: 1000px;
+    position: relative;
+
+}
+
+.c8 {
+    position: absolute;
+    top: 270px;
+    left: 0;
+}
+
+.c8 .img {
+    background-image: url('assets/images/neptune.png');
+    height: 60px;
+    width: 60px;
+}
+
+@keyframes orbit {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.main_container .btn {
+    text-align: right;
+    margin: 3px;
+}
